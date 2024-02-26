@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .side-navbar {
+      background-color: rgb(38, 63, 79);
+      color: white;
+      width: 24.25%;
+      height: 100%;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-list {
+      font-family: "Roboto Condensed", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 35px;
+      list-style: none;
+    }
+    #logo {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+
+    .content-side {
+      color: whitesmoke;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: url(https://images.unsplash.com/uploads/1411724908903377d4696/2e9b0cb2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-color: rgb(49, 163, 229);
+      margin-left: 24.25%;
+      width: 75.75%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      overflow-y: auto;
+    }
+    .page-button {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 16px;
+      margin-top: 20px;
+      width: 100px;
+      height: 43px;
+      background-color: transparent;
+      border-style: solid;
+      border-color: white;
+      border-radius: 5px;
+      color: white;
+    }
+
+    #dif-button-2 {
+      background-color: rgb(38, 63, 79);
+      border: none;
+    }
+
+    #dif-button-1:hover {
+      transition-duration: 250ms;
+      background-color: rgb(229, 49, 66);
+      border: none;
+    }
+    #dif-button-2:hover {
+      transition-duration: 250ms;
+      background-color: transparent;
+      border-style: solid;
+      border-color: rgb(38, 63, 79);
+    }
+  </style>
+  <header>
+    <div class="side-navbar">
+      <div id="logo">
+        <h2 style="color: rgb(229, 49, 66)">INCREDIBLE</h2>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li style="color: rgb(229, 49, 66)">HOME</li>
+          <li>ABOUT</li>
+          <li>GALLERY</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content-side">
+      <h1 style="font-size: 250%">WELCOME TO THE INCREDIBLE</h1>
+      <p>This is some text inside of a div block.</p>
+
+      <div>
+        <button class="page-button" id="dif-button-1">Button Text</button>
+        <button class="page-button" id="dif-button-2">Button Text</button>
+      </div>
+    </div>
+  </header>
+
+  <style>
+    .page-content {
+      display: flex;
+      color: black;
+      margin-left: 24.25%;
+      text-align: center;
+      justify-content: center;
+    }
+
+    #heading {
+      font-size: 150%;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      padding-top: 50px;
+    }
+
+    #heading-para {
+      font-size: 75%;
+    }
+
+    .topic {
+      color: black;
+      font-size: 125%;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      padding-top: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-left: 30%;
+    }
+
+    #topic-1 {
+      gap: 10px;
+    }
+
+    #topic-name {
+      display: flex;
+      float: left;
+    }
+    #topic-info {
+      font-size: medium;
+      width: 200px;
+    }
+  </style>
+
+  <body>
+    <section class="page-content">
+      <div id="heading">
+        <h2>SECTION HEADING</h2>
+        <div id="heading-para">
+          <p>This is some text inside of a div block</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic">
+      <div id="topic-1">
+        <img
+          src="https://assets.website-files.com/5531240438615e9e376d4489/5537c404fdb0e2d6015c55f3_feather-12-black.svg"
+          alt=""
+          width="25%"
+        />
+        <div id="topic-name"></div>
+        <h4>STYLE 1</h4>
+        <div id="topic-info">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.
+          </p>
+        </div>
+        <a href="#" style="text-decoration: none; font-size: 20px; gap: 50px"
+          >Text Link</a
+        >
+      </div>
+
+      <div id="topic-1">
+        <img
+          src="https://assets.website-files.com/5531240438615e9e376d4489/5537c45576ee39080f7f1b0a_feather-05-black.svg"
+          alt=""
+          width="25%"
+        />
+        <div id="topic-name"></div>
+        <h4>STYLE 2</h4>
+        <div id="topic-info">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.
+          </p>
+        </div>
+        <a href="#" style="text-decoration: none; font-size: 20px">Text Link</a>
+      </div>
+
+      <div id="topic-1">
+        <img
+          src="https://assets.website-files.com/5531240438615e9e376d4489/5537c469fdb0e2d6015c55f8_feather-24-black.svg"
+          alt=""
+          width="25%"
+        />
+        <div id="topic-name"></div>
+        <h4>STYLE 3</h4>
+        <div id="topic-info">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.
+          </p>
+        </div>
+        <a href="#" style="text-decoration: none; font-size: 20px">Text Link</a>
+      </div>
+
+      <div id="topic-1">
+        <img
+          src="https://assets.website-files.com/5531240438615e9e376d4489/5537c47f0219280a0ff0b5a2_feather-66-black.svg"
+          alt=""
+          width="25%"
+        />
+        <div id="topic-name"></div>
+        <h4>STYLE 4</h4>
+        <div id="topic-info">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.
+          </p>
+        </div>
+        <a href="#" style="text-decoration: none; font-size: 20px">Text Link</a>
+      </div>
+    </section>
+
+    <section class="section-heading">
+      <div id="title">
+        <h1>Here you can put some text</h1>
+      </div>
+      <button id="button">Call to Action</button>
+    </section>
+
+    <section class="section-title">
+      <h1>LIGHTBOX SECTION</h1>
+      <div id="title-info">
+        <p>This is some text inside of a div block</p>
+      </div>
+    </section>
+    <div class="images-1">
+      <img
+        src="https://assets.website-files.com/5531240438615e9e376d4489/5537c67676ee39080f7f1b80_1f510c30-500px.jpg"
+        alt=""
+        width="216px"
+        height="216px"
+      />
+
+      <img
+        src="https://assets.website-files.com/5531240438615e9e376d4489/5537c6aafdb0e2d6015c563b_1fbb59d6-500px.jpg"
+        alt=""
+        width="216px"
+        height="216px"
+      />
+
+      <img
+        src="https://assets.website-files.com/5531240438615e9e376d4489/5537c6aa5f1065d401ce049c_2jEqzi01Ru2HBhGLTBgB_MG_5236-500px.jpg"
+        alt=""
+        width="216px"
+        height="216px"
+      />
+
+      <img
+        src="https://assets.website-files.com/5531240438615e9e376d4489/5537c6aa76ee39080f7f1b87_2c0343f7-500px.jpg"
+        alt=""
+        width="216px"
+        height="216px"
+      />
+    </div>
+    <div class="images-2">
+      <img
+        src="https://assets.website-files.com/5531240438615e9e376d4489/5537c6ab5f1065d401ce049d_3ae98ccd-500px.jpg"
+        alt=""
+        width="216px"
+        height="216px"
+      />
+
+      <img
+        src="https://assets.website-files.com/5531240438615e9e376d4489/55312092f2553c4926c62a39_4JUAYmLTuS1mBvBBwe3D_St_Anton-500px.jpg"
+        alt=""
+        width="216px"
+        height="216px"
+      />
+
+      <img
+        src="https://assets.website-files.com/5531240438615e9e376d4489/5537c6ab5f1065d401ce049e_1w6iAjLXSHa5OYRSYAjd__MG_1162-500px.jpg"
+        alt=""
+        width="216px"
+        height="216px"
+      />
+
+      <img
+        src="https://assets.website-files.com/5531240438615e9e376d4489/5537c6ab76ee39080f7f1b88_4e769802-500px.jpg"
+        alt=""
+        width="216px"
+        height="216px"
+      />
+    </div>
+
+    <hr />
+
+    <div class="form-sect">
+      <div class="contact-sect">
+        <h1>CONTACT FORM</h1>
+        <div id="sect-info">
+          <p>This is some text inside of a div block</p>
+        </div>
+      </div>
+
+      <form action="#" class="form">
+        <div id="input-top">
+          <input required type="text" placeholder="Name..." class="input-box" />
+          <input
+            required
+            type="email"
+            placeholder="Email..."
+            class="input-box"
+          />
+          <br />
+          <textarea
+            name="Message"
+            id="message-box"
+            placeholder="Message"
+          ></textarea>
+          <span id="submit-button">
+            <button id="form-button">Send Message</button>
+          </span>
+        </div>
+      </form>
+    </div>
+  </body>
+
+  <style>
+    #submit-button {
+      display: flex;
+      justify-content: center;
+    }
+    #form-button:hover {
+      transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+      transition-duration: 250ms;
+      color: rgb(20, 19, 22);
+      background-color: transparent;
+      border-style: solid;
+      width: 500px;
+      border-color: rgb(38, 63, 79);
+    }
+    #form-button {
+      transition-duration: 500ms;
+      display: block;
+      background-color: rgb(229, 49, 66);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      width: 200px;
+      height: 45px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+    }
+    .form-sect {
+      background-color: rgb(228, 228, 228);
+      height: 500px;
+    }
+    #message-box {
+      font-family: "Roboto Condensed", sans-serif;
+      position: relative;
+      max-width: 700px;
+      max-height: 300;
+      top: 15px;
+      margin-left: 10px;
+      font-size: 20px;
+      width: 530px;
+      height: 120px;
+      padding-left: 10px;
+      padding-top: 5px;
+    }
+    .input-box {
+      width: 250px;
+      height: 25px;
+      font-size: 20px;
+      margin-left: 10px;
+      padding-left: 10px;
+    }
+    .form {
+      position: relative;
+      top: 20px;
+      margin-left: 24.25%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    #sect-info {
+      padding-top: 5px;
+    }
+    .contact-sect {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-left: 24.25%;
+      font-size: 20px;
+      padding-top: 100px;
+    }
+    .images-1 {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      padding-left: 24.25%;
+      padding-top: 5%;
+    }
+
+    .images-2 {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      padding-left: 24.25%;
+      padding-top: 20px;
+      padding-bottom: 5%;
+    }
+    #title-info {
+      padding-top: 5px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      color: grey;
+    }
+    .section-title {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 25px;
+      margin-left: 24.25%;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    .section-heading {
+      color: white;
+      background-color: rgb(229, 49, 66);
+      font-family: "Roboto Condensed", sans-serif;
+      height: 125px;
+      margin-top: 50px;
+      margin-left: 24.25%;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+    }
+    #title {
+      padding-left: 5%;
+      font-size: 20px;
+    }
+    #button {
+      background-color: rgb(38, 63, 79);
+      font-size: 15px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      width: 130px;
+      height: 50px;
+      margin-left: 40%;
+    }
+    #button:hover {
+      background-color: transparent;
+      border: white;
+    }
+  </style>
+
+  <footer>
+    <div class="footer-content">
+      <h4>Copyright Incredible. Made by Liam.</h4>
+    </div>
+  </footer>
+
+  <style>
+    .footer-content {
+      background-color: rgb(199, 199, 199);
+      font-family: "Roboto", sans-serif;
+      color: rgb(73, 73, 73);
+      width: 75.75%;
+      height: 55px;
+      margin-left: 24.25%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</html>
